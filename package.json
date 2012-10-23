@@ -14,5 +14,8 @@
     "timer"
   ],
   "author": "Aaron Forsander",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "~0.3.9"
+  }
 }
