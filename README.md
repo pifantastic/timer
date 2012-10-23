@@ -18,6 +18,21 @@ timer('a').start();
 timer('a').stop();
 ```
 
+### timer.clearAll
+
+Clear all named timers created using the `timer()` function.
+
+### timer.summary
+
+Get a summary of all current timers. Returns an object where the key is the name of the timer and
+the value is the current time for that timer.
+
+```javascript
+timer('a').start();
+timer('b').start();
+timer.summary(); // { a: 7.440999984741211, b: 7.440999984741211 }
+```
+
 ### timer.Timer
 
 Creates a new timer object.
