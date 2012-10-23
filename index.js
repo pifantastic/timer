@@ -75,15 +75,17 @@ Timer.prototype.clear = function () {
  * @return {Double} Total time in seconds.
  */
 Timer.prototype.total = function () {
-  // Sum up all segments.
-  var tot = this._segments.reduce(function (a, b) {
-    return a + b;
-  }, 0);
+  var tot = 0;
 
   // Add time of currently running segment if it exists.
   if (this._start !== null) {
     tot += now() - this._start;
   }
+
+  // Sum up all segments.
+  tot += this._segments.reduce(function (a, b) {
+    return a + b;
+  }, 0);
 
   return tot;
 };
