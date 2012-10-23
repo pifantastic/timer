@@ -1,3 +1,5 @@
+![CI](https://secure.travis-ci.org/pifantastic/timer.png)
+
 # Introduction
 
 A simple code timer for node. Makes it easy to measure execution time of pieces of your codebase.
