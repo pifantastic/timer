@@ -115,7 +115,7 @@ function timer (name) {
   }
 
   if (!timers[name]) {
-    timers[name] = new Timer(name);
+    timers[name] = new Timer();
   }
 
   return timers[name];
